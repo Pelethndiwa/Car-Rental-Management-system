@@ -1,82 +1,117 @@
-# 🚗 Car Rental and Fleet Management System
 
-An automated web-based Car Rental and Fleet Management System that allows users to book vehicles in real-time and enables administrators to manage fleet status, bookings, payments, and analytics with ease.
+<h1 align="center">Car Rental Website Project</h1>  
 
-## 📌 Features
+This is a project for a car rental website. It is a project for the College Mini Project.
 
-### 🧾 User-side
-- Vehicle listing and category filter
-- Real-time booking system
-- Booking history and status tracking
-- M-Pesa payment integration (STK Push)
-- Responsive UI using Bootstrap
+## Table of Contents
 
-### ⚙️ Admin-side
-- Dashboard with booking and vehicle statistics
-- Add, update, or delete vehicle records
-- Manage booking status (approved, declined, completed)
-- Fleet status control (available, booked, under maintenance)
-- View payment logs and user activity
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Database](#database)
+- [Table](#table)
+- [Car Listing Page](#car-listing-page)
+- [User Story](#user-story)
+- [Admin Page](#admin-page)
+- [Project Report](#project-report)
+- [License](#license)
+- [Demo](#demo)
+- [Authors](#authors)
+- [Show your support](#show-your-support)
 
-### 📊 Data Analytics
-- Visual summaries for admin: total bookings, income, popular vehicles
-- Exportable reports for fleet and financial insights
 
-## 🛠️ Technologies Used
+## Introduction
 
-- **Backend:** PHP (XAMPP)
-- **Database:** MySQL
-- **Frontend:** HTML, CSS, Bootstrap
-- **Scripting:** JavaScript, jQuery
-- **Payment Integration:** M-Pesa STK Push (Daraja API)
+- This is a car rental website project.
+- The purpose of this project is to create a car rental website.
+- The website will have a login page, a car listing page, a car reservation page, and a car return page.
+- The login page will have a username and password input field.
+- The car listing page will have a search bar and a car listing table.
+- The car reservation page will have a car reservation table.
 
-## 🚀 Getting Started
+## Requirements
 
-### Requirements
+- XAMPP is required to run the project.
+- The project will be hosted on a localhost server.
 
-- XAMPP or any local server
-- PHP 7.x or higher
-- MySQL database
-- Internet connection for M-Pesa integration (Daraja API)
+##  Installation
 
-### Installation
+- Install XAMPP.
+- Open XAMPP and click on the Start button.
+- Clone the project to the root of the XAMPP server.
+- Open the project in XAMPP.
+- Import SQL file from database folder to the XAMPP server.
+- Open Browser and navigate to [localhost:8080](localhost:8080).
+- Hurray! The project is now running.
 
-1. Clone or download the repository:
-   ```bash
-   git clone https://github.com/pelethndiwa/Car-Rental-Management-system.git
-   ```
+##  Database
 
-2. Move the folder to your XAMPP `htdocs` directory.
+- The database is stored in a folder called database.
+- The database is named as carproject.sql.
+- The database is stored in the root of the XAMPP server.
+- The database is imported to the XAMPP server.
+- Database used is MySQL.
+- Database Connection page is named [connection.php](/connection.php).
 
-3. Import the database:
-   - Open **phpMyAdmin**.
-   - Create a new database, e.g. `car_rental`.
-   - Import the provided `.sql` file into the database.
+## Table
 
-4. Update database credentials in `/config/db.php`.
+- The table is named as car.
+- The table has the following columns:
+    - car_id: INTEGER PRIMARY KEY AUTO_INCREMENT
+    - car_make: VARCHAR(255)
+    - car_model: VARCHAR(255)
+    - car_year: INTEGER
+    - car_color: VARCHAR(255)
+    - car_price: INTEGER
+    - car_available: BOOLEAN
+    - car_image: VARCHAR(255)
+    - car_description: VARCHAR(255)
 
-5. Start Apache and MySQL from XAMPP and run the project at:
-   ```
-   http://localhost/Car-Rental-Management-system
-   ```
+##  Car Listing Page
 
-6. For M-Pesa integration, set up your Daraja API credentials in `/config/mpesa.php`.
+- The car listing page will have a search bar and a car listing table.
+- The search bar will have a search button.
+- The search button will search for the car based on the search bar input.
+- The car shown only on the car listing page will be the car that is available.
 
-## 🔐 Login Credentials (Default)
+## User Story
 
-### Admin:
-- **Username:** admin  
-- **Password:** 12345
+- As a user, I want to be able to search for a car.
+- As a user, I want to be able to see the car that is available.
+- As a user, I want to be able to reserve a car.
+- As a user, I want to be able to return a car.
+- As a user, I want to be able to see the car that I have reserved.
+- As a user, I want to provide feedback to the car rental website.
+- As a user, I should be able to make payment for the car rental.
 
-### User:
-- Register from the frontend
+## Admin Page
 
-## 📄 License
+- The admin page will have a car listing table.
+- It has a button to add a new car.
+- The button will open a new page where the admin can add a new car.
+- The admin can add a new car by filling in the form.
+- The admin can also delete a car by clicking the delete button.
+- Admin can view user reservation by clicking the view button.
+- Admin can view user return by clicking the view button.
+- Admin can accept or reject a reservation by clicking the accept or reject button.
+- Admin can return a car by clicking the return button.
+- Admin can delete a reservation by clicking the delete button.
+- Admin can view feedback by clicking the view button.
 
-This project is for academic purposes and personal development. Not intended for commercial use without proper permission.
 
-## 👨‍💻 Author
+## Demo
 
-**[PELETH NDIWA]**  
-Final Year Student – Chuka University  
-GitHub: [pelethndiwa](https://github.com/pelethndiwa)
+- [Live Deployment](https://carrental-system.000webhostapp.com/)
+
+
+## Authors 
+
+- [Arnav Singha](https://github.com/ArnavSingha)
+
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
